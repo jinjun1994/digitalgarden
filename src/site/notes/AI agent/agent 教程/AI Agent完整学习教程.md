@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/ai-agent/agent/ai-agent/","tags":["gardenEntry"],"dgShowToc":"true","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/ai-agent/agent/ai-agent/","tags":["gardenEntry"],"dgShowFileTree":"true","dgShowToc":"true","dg-note-properties":{}}
 ---
 
 # AI Agent 完整学习教程
@@ -1775,14 +1775,14 @@ Java 团队可通过 Spring AI 或 LangChain4j 接入模型、向量库和工具
 
 ### 18.3 数据存储的职责划分
 
-| 存储 | 在 Agent 系统中的典型用途 |
-|---|---|
-| MySQL/PostgreSQL | 用户、权限、任务、Checkpoint、审计、精确业务数据 |
-| Redis | 会话缓存、限流、分布式锁、短期状态、幂等键 |
-| 向量数据库 | 非结构化知识和长期语义记忆 |
-| Elasticsearch/OpenSearch | 全文检索、过滤、混合检索和日志搜索 |
-| MongoDB | Schema 变化频繁的文档或中间产物 |
-| 对象存储 | 原始文件、长工具结果、报告和模型产物 |
+| 存储                       | 在 Agent 系统中的典型用途              |
+| ------------------------ | ----------------------------- |
+| MySQL/PostgreSQL         | 用户、权限、任务、Checkpoint、审计、精确业务数据 |
+| Redis                    | 会话缓存、限流、分布式锁、短期状态、幂等键         |
+| 向量数据库                    | 非结构化知识和长期语义记忆                 |
+| Elasticsearch/OpenSearch | 全文检索、过滤、混合检索和日志搜索             |
+| MongoDB                  | Schema 变化频繁的文档或中间产物           |
+| 对象存储                     | 原始文件、长工具结果、报告和模型产物            |
 
 数据库设计原则：精确状态以事务数据库为准，向量库只是派生索引；数据更新或删除后，应通过可靠事件同步重建或删除向量索引。
 
