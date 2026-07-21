@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/ai-agent/agent/ai-agent/","tags":["gardenEntry"],"dgShowFileTree":true,"dgShowToc":true,"dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/ai-agent/agent/ai-agent/","tags":["gardenEntry"],"dgShowToc":true,"dg-note-properties":{}}
 ---
 
 # AI Agent 完整学习教程
